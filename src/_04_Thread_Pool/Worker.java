@@ -5,11 +5,18 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class Worker implements Runnable {
 
 	ConcurrentLinkedQueue<Task> taskQueue;
+	
+	public Worker(ConcurrentLinkedQueue<Task> taskQue) {
+		this.taskQueue = taskQueue;
+	}
 
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-
+		while (taskQueue.size() > 0) {
+			taskQueue.remove();
+			perform();
+		}
 	}
 
 }

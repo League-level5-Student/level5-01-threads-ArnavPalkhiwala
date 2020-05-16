@@ -17,5 +17,19 @@ ConcurrentLinkedQueue<Task> taskQueue;
 		this.taskQueue = taskQueue;
 		
 	}
+	
+	public ThreadPool(int i) {
+		// TODO Auto-generated constructor stub
+	}
+
+	void addTask(task:Task) {
+		taskQueue.add(Task);
+	}
+	
+	void start() {
+		
+		
+		
+	}
 
 }
