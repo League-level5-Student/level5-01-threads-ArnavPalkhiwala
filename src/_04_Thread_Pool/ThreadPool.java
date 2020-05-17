@@ -12,7 +12,6 @@ ConcurrentLinkedQueue<Task> taskQueue;
 		
 		this.threads = threads;
 		for (int i = 0; i < threads.length; i++) {
-		threads[i] = new Worker();	
 		}
 		this.taskQueue = taskQueue;
 		
@@ -22,9 +21,6 @@ ConcurrentLinkedQueue<Task> taskQueue;
 		// TODO Auto-generated constructor stub
 	}
 
-	void addTask(task:Task) {
-		taskQueue.add(Task);
-	}
 	
 	void start() {
 		

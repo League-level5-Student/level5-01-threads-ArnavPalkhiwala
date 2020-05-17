@@ -15,7 +15,6 @@ public class Worker implements Runnable {
 		// TODO Auto-generated method stub
 		while (taskQueue.size() > 0) {
 			taskQueue.remove();
-			perform();
 		}
 	}
 
